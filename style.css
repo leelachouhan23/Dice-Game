@@ -44,11 +44,14 @@ border-radius:10px;
 background:#ffcc00;
 cursor:pointer;
 transition:0.3s;
+height: 50px;
+width: 180px;
 }
 
 button:hover{
-transform:scale(1.1);
+/* transform:scale(1.1); */
 background:#ffaa00;
+/* margin-right: 10px; */
 }
 
 #result{
