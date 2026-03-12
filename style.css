@@ -49,9 +49,7 @@ width: 180px;
 }
 
 button:hover{
-/* transform:scale(1.1); */
 background:#ffaa00;
-/* margin-right: 10px; */
 }
 
 #result{
