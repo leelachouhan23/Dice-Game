@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dice Battle Pro</title>
+
+<title>Dice Game</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -13,37 +14,34 @@
 
 <body>
 
-<h1>🎲 Dice Game</h1>
+    <h1>🎲 Dice Game</h1>
 
-<div class="scoreboard">
-Player: <span id="pScore">0</span>
-Computer: <span id="cScore">0</span>
-</div>
+    <div class="scoreboard">
+        Player: <span id="pScore">0</span> |
+        Computer: <span id="cScore">0</span>
+    </div>
+    <div class="container">
 
-<div class="container">
+    <div class="player">
+        <h2>You</h2>
+        <img id="dice1" src="images/num1.png">
+    </div>
 
-<div class="player">
-<h2>You</h2>
-<img id="dice1" src="images/num1.png">
-</div>
+    <div class="player">
+        <h2>Computer</h2>
+        <img id="dice2" src="images/num1.png">
+    </div>
 
-<div class="player">
-<h2>Computer</h2>
-<img id="dice2" src="images/num1.png">
-</div>
+    </div>
 
-</div>
+        <button onclick="rollDice()">Roll Dice</button>
+        <button onclick="resetGame()">Reset Game</button>
 
-<button onclick="rollDice()">Roll Dice</button>
-<button  id="rest" onclick="resetGame()">Reset Game</button>
+        <h2 id="result"></h2>
 
+        <audio id="rollSound" src="dice.mp3"></audio>
 
-<h2 id="result"></h2>
-
-<audio id="rollSound" src="roll.mp3"></audio>
-<audio id="bgMusic" src="bg-music.mp3" autoplay loop></audio>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
